@@ -12,6 +12,9 @@ def index(request, product_id, size):
 
 def my_shopping_card(request):
     card = Card(request)
+
+
+
     return render_to_response('card/card.html',
                               {'card': card.shopping_card}, context_instance=RequestContext(request))
 

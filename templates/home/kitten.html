@@ -10,7 +10,7 @@
         <div class="desc">{{ product.description }}</div>
         <button class = "btn btn-orange" product_id ="{{ product.id }}" >Add to card</button>
         <select name="Size">
-            <option value="-1" selected>Size-Price</option>
+            <option value="0" selected>Size-Price</option>
             <option value="1">Small-${{ product.price1 }}</option>
             <option value="2">Medium-${{ product.price2 }}</option>
             <option value="3">Large-${{ product.price3 }}</option>
