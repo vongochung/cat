@@ -1,0 +1,77 @@
+{% load staticfiles %}
+<html>
+<head>
+<title>Kitten</title>
+<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" />
+
+</head>
+<body >
+<div class="container">
+<div id="logo"><img src="{% static 'images/cat_logo.png'%}" width="200" height ="150"></div>
+<div class="wrapper">
+<div id="top">
+<br>
+<nav>
+  <div class="testnavi">
+    <ul class="nav navm">
+	<li class="navi"><a class="navi" href="index.html"><span>ORDER</span></a>
+	<ul class="navm">
+		<li class="navi"><a class="navi" href="cat.html">Kitten</a></li>
+		<li class="navi"><a class="navi" href="topping.html">Toppings</a></li>
+	</ul>
+    </li>
+    </div>
+ <div id ="gallery">
+<ul id="main">
+<li>
+<img src="{% static 'images/upload/topping1.png' %}" alt="" width="140" height ="170"/>
+
+ <input type="submit" value="add to cart"/>
+ 
+</li>
+
+    <li>
+<img src="{% static 'images/upload/topping1.png' %}" alt="" width="140" height ="170"/>
+
+ <input type="submit" value="add to cart"/>
+
+</li>
+    <li>
+<img src="{% static 'images/upload/topping1.png' %}" alt="" width="140" height ="170"/>
+
+ <input type="submit" value="add to cart"/>
+
+</li>
+    <li>
+<img src="{% static 'images/upload/topping1.png' %}" alt="" width="140" height ="170"/>
+
+ <input type="submit" value="add to cart"/>
+
+</li>
+    <li>
+<img src="{% static 'images/upload/topping1.png' %}" alt="" width="140" height ="170"/>
+
+ <input type="submit" value="add to cart"/>
+
+</li>
+    </ul>
+
+
+</div>
+</div> 
+</div>
+    
+<div class="footer">
+<div id="text">
+<p> 2013@ All rights reserved The Happy Cats</p> 
+</div>
+</div>  
+</div>
+	</div>
+    </div>
+    </nav> 
+</div> 
+
+</body>
+</html>
+

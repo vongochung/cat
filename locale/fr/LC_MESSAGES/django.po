@@ -1,0 +1,803 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-18 16:36+0700\n"
+"PO-Revision-Date: 2013-07-18 16:42+0700\n"
+"Last-Translator: tai <tai@uniweb.vn>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.5.5\n"
+
+#: .\settings.py:41 .\templates\layout.html.py:62
+msgid "English"
+msgstr ""
+
+#: .\settings.py:42 .\templates\layout.html.py:70
+msgid "French"
+msgstr ""
+
+#: .\apps\account\functions.py:117
+#, python-format
+msgid "%s is following you !"
+msgstr ""
+
+#: .\apps\account\views\dashboard.py:27 .\apps\account\views\dashboard.py:74
+msgid "Player not found"
+msgstr ""
+
+#: .\apps\account\views\dashboard.py:266
+#, fuzzy
+msgid "Facebook friend not exist in WiDoo"
+msgstr "Amis Facebook"
+
+#: .\apps\account\views\dashboard.py:370
+msgid "Error"
+msgstr ""
+
+#: .\apps\account\views\dashboard.py:378
+msgid "update error"
+msgstr ""
+
+#: .\apps\account\views\profile.py:48 .\apps\account\views\profile.py:54
+#, python-format
+msgid "%s already exists"
+msgstr ""
+
+#: .\apps\account\views\profile.py:117
+#, fuzzy
+msgid "You've added friend successfully"
+msgstr "Vous avez changé votre profil avec succès!"
+
+#: .\apps\api\views.py:1099
+msgid "Please login first"
+msgstr ""
+
+#: .\apps\api\views.py:1102
+msgid "Registration id is required"
+msgstr ""
+
+#: .\apps\api\views.py:1110
+msgid "Update successfully"
+msgstr ""
+
+#: .\apps\event\functions.py:330 .\apps\event\functions.py:339
+#, python-format
+msgid "Your event %s is full participants !"
+msgstr ""
+
+#: .\apps\event\functions.py:338 .\apps\event\views.py:423
+#: .\apps\event\management\commands\auto_message_event_over.py:36
+#: .\apps\message\models.py:44
+#, fuzzy
+msgid "Event Notification"
+msgstr "Position actuelle"
+
+#: .\apps\event\management\commands\auto_message_event_over.py:14
+msgid "Notification for event is over"
+msgstr ""
+
+#: .\apps\event\management\commands\auto_message_event_over.py:25
+#, python-format
+msgid "Your event %s is over"
+msgstr ""
+
+#: .\apps\message\models.py:40
+msgid "New Message"
+msgstr ""
+
+#: .\apps\message\models.py:42
+#, fuzzy
+msgid "Friend Request"
+msgstr "Amis"
+
+#: .\apps\message\models.py:65 .\apps\message\models.py:91
+msgid "Message content can not be empty !"
+msgstr ""
+
+#: .\apps\message\models.py:68 .\apps\message\models.py:94
+msgid "Message content should less than 500 characters !"
+msgstr ""
+
+#: .\apps\message\models.py:74
+msgid "Venue is not exist !"
+msgstr ""
+
+#: .\apps\message\models.py:79
+msgid "Event is not exist !"
+msgstr ""
+
+#: .\apps\message\models.py:84
+msgid "Receiver is not exist !"
+msgstr ""
+
+#: .\apps\message\models.py:98
+msgid "Parent message does not exist !"
+msgstr ""
+
+#: .\apps\message\models.py:103
+msgid "You can not reply this type of message with another type !"
+msgstr ""
+
+#: .\templates\layout.html.py:43
+msgid "Home"
+msgstr "Accueil"
+
+#: .\templates\layout.html.py:44
+#: .\templates\account\_dashboard-events.html.py:17
+#: .\templates\account\_player_tooltip.html.py:25
+#: .\templates\account\dashboard.html.py:16
+#: .\templates\account\dashboard.html.py:53
+#: .\templates\venue\_venue_detail.html.py:12
+msgid "Events"
+msgstr ""
+
+#: .\templates\layout.html.py:45
+msgid "Venues"
+msgstr "Lieux"
+
+#: .\templates\layout.html.py:46
+msgid "Search"
+msgstr ""
+
+#: .\templates\layout.html.py:75
+msgid "Quit"
+msgstr "Quitter"
+
+#: .\templates\layout.html.py:96
+msgid "Create an Event"
+msgstr ""
+
+#: .\templates\layout.html.py:97
+msgid "Click here to schedule a match and start your adventure on WiDooSport"
+msgstr ""
+
+#: .\templates\layout.html.py:98 .\templates\layout.html.py:104
+msgid "Create now"
+msgstr ""
+
+#: .\templates\layout.html.py:102
+msgid "Create a Venue"
+msgstr ""
+
+#: .\templates\layout.html.py:103
+msgid "Need to organize or reference a sport area? It's right there."
+msgstr ""
+
+#: .\templates\layout.html.py:118
+msgid "User Agreement"
+msgstr "Accords utilisateur"
+
+#: .\templates\layout.html.py:119
+msgid "Privacy Policy"
+msgstr ""
+
+#: .\templates\layout.html.py:120
+msgid "Community Guidelines"
+msgstr ""
+
+#: .\templates\layout.html.py:121
+msgid "Help Center"
+msgstr "Centre d'aide"
+
+#: .\templates\account\_change_pass_success.html.py:3
+msgid "You changed password successfully!"
+msgstr "Votre mot de passe a été changé avec succès!"
+
+#: .\templates\account\_dashboard-events.html.py:6
+#: .\templates\account\_friend_list.html.py:7
+msgid "Pending requests"
+msgstr ""
+
+#: .\templates\account\_dashboard-wall.html.py:2
+msgid "Newsfeed"
+msgstr "Actualités"
+
+#: .\templates\account\_dashboard-wall.html.py:5
+#: .\templates\event\_event_wall.html.py:6
+#: .\templates\venue\_venue_wall.html.py:6
+msgid "What's on your mind?"
+msgstr "Exprimez vous"
+
+#: .\templates\account\_dashboard-wall.html.py:6
+#: .\templates\event\_event_wall.html.py:7
+#: .\templates\venue\_venue_wall.html.py:7
+msgid "Submit"
+msgstr "Valider"
+
+#: .\templates\account\_dashboard-wall.html.py:18
+#: .\templates\account\_friend_list.html.py:28
+#: .\templates\event\_event_wall.html.py:19
+#: .\templates\venue\_venue_wall.html.py:19
+msgid "See more"
+msgstr "Voir plus"
+
+#: .\templates\account\_event_tooltip.html.py:20
+#: .\templates\event\_event_detail.html.py:36
+msgid "Do you want to join this event?"
+msgstr ""
+
+#: .\templates\account\_event_tooltip.html.py:23
+msgid "Please select a team!"
+msgstr ""
+
+#: .\templates\account\_event_tooltip.html.py:30
+msgid "Please select a team to join!"
+msgstr ""
+
+#: .\templates\account\_event_tooltip.html.py:30
+msgid "Join"
+msgstr ""
+
+#: .\templates\account\_event_tooltip.html.py:31
+#: .\templates\account\_message_tooltip.html.py:15
+msgid "No"
+msgstr ""
+
+#: .\templates\account\_form-upload.html.py:17
+msgid "Select image"
+msgstr "Choisir une image"
+
+#: .\templates\account\_form-upload.html.py:18
+msgid "Change"
+msgstr "Modifier"
+
+#: .\templates\account\_form-upload.html.py:21
+msgid "Remove"
+msgstr "Supprimer"
+
+#: .\templates\account\_form-upload.html.py:22
+msgid "Upload"
+msgstr "Envoyer"
+
+#: .\templates\account\_friend.html.py:4
+#: .\templates\event\__list_event.html.py:14
+#: .\templates\event\_event_detail.html.py:74
+#: .\templates\event\_team_player.html.py:30
+#: .\templates\message\_message.html.py:9 .\templates\message\_reply.html.py:7
+#: .\templates\venue\_list_venue.html.py:38
+#: .\templates\venue\_venue_pitch.html.py:23
+msgid "Delete"
+msgstr ""
+
+#: .\templates\account\_friend.html.py:35
+#: .\templates\account\_friend.html.py:43
+msgid "View profile"
+msgstr "Voir le profil"
+
+#: .\templates\account\_friend.html.py:48
+msgid "Add Friend"
+msgstr "Ajouter comme amis"
+
+#: .\templates\account\_friend.html.py:63
+#: .\templates\account\_friend.html.py:77
+#: .\templates\account\_friend.html.py:98
+msgid "Invite"
+msgstr "Inviter"
+
+#: .\templates\account\_friend_list.html.py:14
+msgid "Facebook friends"
+msgstr "Amis Facebook"
+
+#: .\templates\account\_friend_list.html.py:14
+msgid "WidooSport Friends"
+msgstr "Amis WidooSport"
+
+#: .\templates\account\_friend_list.html.py:14
+#: .\templates\event\__list_event.html.py:29
+#: .\templates\event\_event_detail.html.py:13
+#: .\templates\event\_team_player.html.py:4
+msgid "Participants"
+msgstr ""
+
+#: .\templates\account\_message_tooltip.html.py:11
+msgid "This user is following you."
+msgstr ""
+
+#: .\templates\account\_message_tooltip.html.py:12
+msgid "Do you want to follow him/her?"
+msgstr ""
+
+#: .\templates\account\_message_tooltip.html.py:14
+msgid "Yes"
+msgstr ""
+
+#: .\templates\account\_player_tooltip.html.py:26
+#: .\templates\account\dashboard.html.py:54
+msgid "Following"
+msgstr ""
+
+#: .\templates\account\_player_tooltip.html.py:27
+#: .\templates\account\dashboard.html.py:55
+msgid "Follower"
+msgstr ""
+
+#: .\templates\account\_player_tooltip.html.py:28
+#: .\templates\account\dashboard.html.py:56
+msgid "Escape"
+msgstr ""
+
+#: .\templates\account\_profile-success.html.py:12
+msgid "You changed profile successfully!"
+msgstr "Vous avez changé votre profil avec succès!"
+
+#: .\templates\account\dashboard.html.py:14
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: .\templates\account\dashboard.html.py:22
+msgid "Friends"
+msgstr "Amis"
+
+#: .\templates\account\dashboard.html.py:25
+msgid "Facebook"
+msgstr ""
+
+#: .\templates\account\dashboard.html.py:67
+msgid "Change profile"
+msgstr ""
+
+#: .\templates\account\dashboard.html.py:68
+msgid "Change your sport"
+msgstr ""
+
+#: .\templates\account\dashboard.html.py:69
+msgid "Change your location"
+msgstr ""
+
+#: .\templates\account\dashboard.html.py:78
+msgid "Do you want to follow this user"
+msgstr "Do you want to follow this user"
+
+#: .\templates\account\dashboard.html.py:78
+msgid "Follow"
+msgstr ""
+
+#: .\templates\account\dashboard.html.py:78
+msgid "Unfollow"
+msgstr ""
+
+#: .\templates\account\dashboard.html.py:91
+#: .\templates\account\dashboard.html.py:102
+#: .\templates\account\dashboard.html.py:116
+#: .\templates\account\dashboard.html.py:128
+#: .\templates\account\dashboard.html.py:138
+#: .\templates\account\dashboard.html.py:151
+#: .\templates\common\_search_gmap.html.py:18
+#: .\templates\event\_event_detail.html.py:97
+#: .\templates\event\_event_detail.html.py:119
+#: .\templates\home\index.html.py:100
+#: .\templates\venue\_venue_detail.html.py:116
+#: .\templates\venue\_venue_detail.html.py:124
+msgid "×"
+msgstr ""
+
+#: .\templates\account\dashboard.html.py:92
+msgid "Edit Image Profile"
+msgstr ""
+
+#: .\templates\account\dashboard.html.py:103
+msgid "Edit Profile"
+msgstr ""
+
+#: .\templates\account\dashboard.html.py:104
+msgid "Change your password"
+msgstr ""
+
+#: .\templates\account\dashboard.html.py:110
+#: .\templates\account\dashboard.html.py:145
+msgid "Save changes"
+msgstr ""
+
+#: .\templates\account\dashboard.html.py:117
+msgid "Edit Sport"
+msgstr ""
+
+#: .\templates\account\dashboard.html.py:129
+msgid "Edit Location"
+msgstr ""
+
+#: .\templates\account\dashboard.html.py:139
+msgid "Edit Team"
+msgstr ""
+
+#: .\templates\account\dashboard.html.py:152
+msgid "Change password"
+msgstr ""
+
+#: .\templates\account\dashboard.html.py:158
+#: .\templates\event\_event_detail.html.py:113
+#: .\templates\event\_event_detail.html.py:126
+msgid "Save"
+msgstr ""
+
+#: .\templates\common\_search_gmap.html.py:8
+msgid "Type an address, street or city name"
+msgstr ""
+
+#: .\templates\common\_search_gmap.html.py:9
+msgid "Find"
+msgstr "Chercher"
+
+#: .\templates\common\_search_gmap.html.py:10
+msgid "Current location"
+msgstr "Position actuelle"
+
+#: .\templates\common\_search_gmap.html.py:11
+msgid "Filter by sports"
+msgstr ""
+
+#: .\templates\common\_search_gmap.html.py:19
+msgid "Filter Sport"
+msgstr ""
+
+#: .\templates\common\_search_gmap.html.py:25
+msgid "OK"
+msgstr ""
+
+#: .\templates\email\email_event.html.py:20
+msgid "Click here to see the event"
+msgstr ""
+
+#: .\templates\email\friend_request.html.py:10
+#, fuzzy
+msgid "Friend request"
+msgstr "Amis"
+
+#: .\templates\email\friend_request.html.py:16
+msgid "Login and see your friend"
+msgstr ""
+
+#: .\templates\email\reset_pass.html.py:2
+msgid "Reset your password!"
+msgstr ""
+
+#: .\templates\email\reset_pass.html.py:3 .\templates\email\signup.html.py:3
+msgid "Click here !"
+msgstr ""
+
+#: .\templates\email\signup.html.py:2
+msgid "Thanks to signup into WiDoo Sport!"
+msgstr ""
+
+#: .\templates\event\__list_event.html.py:27
+msgid "Sport"
+msgstr ""
+
+#: .\templates\event\__list_event.html.py:28
+msgid "Pitch"
+msgstr ""
+
+#: .\templates\event\__list_event.html.py:34
+msgid "No event available"
+msgstr ""
+
+#: .\templates\event\_event_detail.html.py:14
+#: .\templates\venue\_venue_detail.html.py:11
+msgid "Wall"
+msgstr ""
+
+#: .\templates\event\_event_detail.html.py:15
+#, fuzzy
+msgid "Invite Friend"
+msgstr "Inviter"
+
+#: .\templates\event\_event_detail.html.py:16
+#, fuzzy
+msgid "Invite Facebook Friend"
+msgstr "Amis Facebook"
+
+#: .\templates\event\_event_detail.html.py:32
+msgid "Edit event info"
+msgstr ""
+
+#: .\templates\event\_event_detail.html.py:36
+msgid "Are you sure to leave this event?"
+msgstr ""
+
+#: .\templates\event\_event_detail.html.py:36
+msgid "Join now"
+msgstr ""
+
+#: .\templates\event\_event_detail.html.py:36
+msgid "Leave"
+msgstr ""
+
+#: .\templates\event\_event_detail.html.py:84
+#: .\templates\event\index.html.py:25
+msgid "Create event"
+msgstr ""
+
+#: .\templates\event\_event_detail.html.py:98
+msgid "Edit Image Event"
+msgstr ""
+
+#: .\templates\event\_event_detail.html.py:107
+msgid "Add team"
+msgstr ""
+
+#: .\templates\event\_event_detail.html.py:120
+msgid "Update team score"
+msgstr ""
+
+#: .\templates\event\_event_form.html.py:32
+msgid "You need to select sport type!!"
+msgstr ""
+
+#: .\templates\event\_event_wall.html.py:3
+msgid "Event Wall"
+msgstr ""
+
+#: .\templates\event\_list_event.html.py:8
+msgid "My events"
+msgstr ""
+
+#: .\templates\event\_list_event.html.py:9
+msgid "Create Event"
+msgstr ""
+
+#: .\templates\event\_list_event.html.py:11
+msgid "Favourite events"
+msgstr ""
+
+#: .\templates\event\_list_event.html.py:13
+msgid "All events"
+msgstr ""
+
+#: .\templates\event\_team_player.html.py:6
+msgid "Add Team"
+msgstr ""
+
+#: .\templates\event\_team_player.html.py:26
+msgid "Do you want to join this team?"
+msgstr ""
+
+#: .\templates\event\_team_player.html.py:26
+msgid "Join!"
+msgstr ""
+
+#: .\templates\event\_team_player.html.py:30
+msgid "\"Are you sure to delete this team?\""
+msgstr ""
+
+#: .\templates\event\_team_player.html.py:35
+msgid "Update score"
+msgstr ""
+
+#: .\templates\event\_team_player.html.py:49
+msgid "X"
+msgstr ""
+
+#: .\templates\event\_team_player.html.py:53
+msgid "!"
+msgstr ""
+
+#: .\templates\event\_team_player.html.py:62
+msgid "No participant in this team!"
+msgstr ""
+
+#: .\templates\event\_team_player.html.py:64
+msgid "No participant in this event!"
+msgstr ""
+
+#: .\templates\event\index.html.py:11
+msgid "In The Area"
+msgstr ""
+
+#: .\templates\event\index.html.py:12
+msgid "My Event"
+msgstr ""
+
+#: .\templates\event\index.html.py:31
+msgid "You need to select sport type"
+msgstr ""
+
+#: .\templates\home\_forgot_pass_success.html.py:3
+msgid "Please check your email to reset your password!"
+msgstr ""
+
+#: .\templates\home\_welcome.html.py:12
+msgid "Welcome in the most sporty community on the web!"
+msgstr ""
+
+#: .\templates\home\_welcome.html.py:16
+msgid "Organize or join sports events around you"
+msgstr ""
+
+#: .\templates\home\_welcome.html.py:20
+msgid "All sports are on widoo sport!"
+msgstr ""
+
+#: .\templates\home\_welcome.html.py:24
+msgid "Widoo sport also available on your smartphones!"
+msgstr ""
+
+#: .\templates\home\account_active.html.py:19
+msgid "Active Account"
+msgstr ""
+
+#: .\templates\home\account_active.html.py:23
+msgid "Congratulation."
+msgstr ""
+
+#: .\templates\home\account_active.html.py:24
+msgid "Active account successfully."
+msgstr ""
+
+#: .\templates\home\account_active.html.py:25
+msgid "Please go to login page."
+msgstr ""
+
+#: .\templates\home\account_active.html.py:27
+msgid "Login"
+msgstr ""
+
+#: .\templates\home\account_active.html.py:31
+msgid "Active code not exist."
+msgstr ""
+
+#: .\templates\home\account_active.html.py:32
+msgid "Back"
+msgstr ""
+
+#: .\templates\home\account_active.html.py:36
+msgid "Active code is expired."
+msgstr ""
+
+#: .\templates\home\account_active.html.py:37
+msgid ""
+"Please use forgot password to reset you password and active your account."
+msgstr ""
+
+#: .\templates\home\index.html.py:46 .\templates\home\index.html.py:80
+msgid "Forgot your password?"
+msgstr ""
+
+#: .\templates\home\index.html.py:84
+msgid ""
+"Please check your email box to validate your account. Your will find a link "
+"to complete the registration process."
+msgstr ""
+
+#: .\templates\home\index.html.py:85
+msgid "Make sure to check your SPAM box if you don't find our email."
+msgstr ""
+
+#: .\templates\home\index.html.py:86
+msgid "Thank you."
+msgstr ""
+
+#: .\templates\home\index.html.py:87
+msgid "Close"
+msgstr ""
+
+#: .\templates\home\index.html.py:101
+msgid "Forgot password"
+msgstr ""
+
+#: .\templates\home\index.html.py:110 .\templates\message\_message.html.py:29
+msgid "Send"
+msgstr ""
+
+#: .\templates\message\_message.html.py:6
+msgid "Cancel"
+msgstr ""
+
+#: .\templates\message\_message.html.py:6
+msgid "Reply"
+msgstr ""
+
+#: .\templates\message\_message.html.py:8
+msgid "Are you sure to delete this message?"
+msgstr ""
+
+#: .\templates\message\_message.html.py:20
+msgid "Click to see the request"
+msgstr ""
+
+#: .\templates\venue\_list_venue.html.py:9
+msgid "My venues"
+msgstr ""
+
+#: .\templates\venue\_list_venue.html.py:10
+msgid "Create Venue"
+msgstr ""
+
+#: .\templates\venue\_list_venue.html.py:12 .\templates\venue\index.html.py:12
+msgid "Favourite Venues"
+msgstr ""
+
+#: .\templates\venue\_list_venue.html.py:14
+msgid "All venues"
+msgstr ""
+
+#: .\templates\venue\_list_venue.html.py:53
+msgid "Sport Type"
+msgstr ""
+
+#: .\templates\venue\_list_venue.html.py:54
+msgid "Phone"
+msgstr ""
+
+#: .\templates\venue\_pitch_success.html.py:3
+msgid "You created pitch successfully!"
+msgstr ""
+
+#: .\templates\venue\_venue_detail.html.py:13
+#: .\templates\venue\_venue_pitch.html.py:4
+msgid "Pitches"
+msgstr ""
+
+#: .\templates\venue\_venue_detail.html.py:28
+msgid "Location"
+msgstr ""
+
+#: .\templates\venue\_venue_detail.html.py:31
+msgid "Edit venue info"
+msgstr ""
+
+#: .\templates\venue\_venue_detail.html.py:35
+msgid "Do you want to add this venue in your favorites"
+msgstr ""
+
+#: .\templates\venue\_venue_detail.html.py:36
+msgid "Do you want to remove this venue from your favorites"
+msgstr ""
+
+#: .\templates\venue\_venue_detail.html.py:36
+msgid "Remove favourite"
+msgstr ""
+
+#: .\templates\venue\_venue_detail.html.py:54
+msgid "Available sports"
+msgstr ""
+
+#: .\templates\venue\_venue_detail.html.py:89
+#: .\templates\venue\index.html.py:24
+msgid "Create venue"
+msgstr ""
+
+#: .\templates\venue\_venue_detail.html.py:102
+msgid "Create Pitch"
+msgstr ""
+
+#: .\templates\venue\_venue_detail.html.py:117
+msgid "Edit Venue Location"
+msgstr ""
+
+#: .\templates\venue\_venue_detail.html.py:125
+msgid "Edit Image Venue"
+msgstr ""
+
+#: .\templates\venue\_venue_pitch.html.py:5
+msgid "Create pitch"
+msgstr ""
+
+#: .\templates\venue\_venue_pitch.html.py:22
+msgid "Edit pitch"
+msgstr ""
+
+#: .\templates\venue\_venue_success.html.py:3
+#, python-format
+msgid "You %(task)s venue successfully!"
+msgstr ""
+
+#: .\templates\venue\_venue_wall.html.py:3
+msgid "Venue Wall"
+msgstr ""
+
+#: .\templates\venue\index.html.py:10
+msgid "All Venues"
+msgstr ""
+
+#: .\templates\venue\index.html.py:11
+msgid "My Venues"
+msgstr ""

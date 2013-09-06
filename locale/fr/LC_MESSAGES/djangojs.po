@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-31 18:36+0700\n"
+"PO-Revision-Date: 2013-07-26 10:24+0700\n"
+"Last-Translator: tai <tai@uniweb.vn>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.5.5\n"
+
+#: .\assets\js\event.js.c:70
+msgid "Are you sure to delete this participant?"
+msgstr ""
+
+#: .\assets\js\mygmap.js.c:327 .\assets\js\mygmap.js.c:382
+msgid "Use this location"
+msgstr "Utilisez cet emplacement"
+
+#: .\assets\js\mygmap.js.c:328 .\assets\js\mygmap.js.c:332
+#: .\assets\js\mygmap.js.c:383 .\assets\js\mygmap.js.c:387
+msgid "Clear"
+msgstr "Effacer"
+
+#: .\assets\js\mygmap.js.c:331 .\assets\js\mygmap.js.c:386
+msgid "Update"
+msgstr "Mettre à jour"
+
+#: .\assets\js\profile.js.c:250 .\assets\js\venue.js.c:249
+msgid "Updated location successfully"
+msgstr "Mise à jour avec succès"
+
+#: .\assets\js\venue.js.c:88
+msgid ""
+"Are you sure to delete this venue? If you delete this, all wall messages and "
+"pitches of this venue will be deleted !"
+msgstr ""
+
+#: .\assets\js\venue.js.c:89
+msgid "Your venue and its all belongings are deleted !"
+msgstr ""
+
+#~ msgid "Home"
+#~ msgstr "Accueil"

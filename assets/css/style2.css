@@ -1,0 +1,52 @@
+----<style>
+#gallery #main {
+padding-left: 20px;
+}
+#gallery #main li {
+float: left;
+width: 250px;
+height:300px;
+margin: 50px 40px 150px 50px;
+}
+#gallery #main li img {
+display: block;
+width: 100%;
+
+#gallery {
+padding: 2em 0;
+margin: 0 auto;
+width: 600px;
+font: small Verdana, sans-serif;
+}
+#gallery h2 {
+margin: 0;
+border-bottom: 1px solid #666;
+}
+#gallery #main {
+	
+width: 100%;
+margin: 0;
+padding: 1em 0;
+list-style: none;
+}
+#gallery #main li p {
+margin: 0;
+}
+ul,li
+{
+	list-style-type: none;
+}
+  
+#catsize{
+position:fixed; 
+margin-right:20px;
+width:200px;
+}
+#size {
+float:left;
+right:10px;
+top:10px;
+width:800px; 
+ 
+} 
+</style>
