@@ -12,14 +12,53 @@ body {
 	min-height: 100%;
 }
 
+#logo {
+	text-align: center;
+	padding: 30px;
+}
+
+#logo img {
+	height: 150px;
+}
+
+#nav {
+	padding: 0 40px;
+}
+
+#nav > ul {
+	position: absolute;
+}
+
+#nav > ul:hover > li.hidden {
+	display: block;
+}
+
 #nav > ul > li {
-	display: inline;
-	line-height: 13px;
+	line-height: 32px;
+	width: 200px;
+	height: 32px;
+	padding: 0 5px;
+	background: #444;
+	color: #eee;
+}
+
+#nav > ul > li.hidden {
+	display: none;
+} 
+
+#nav a {
+	color: #eee;
+	text-decoration: none;
+}
+
+#content {
+	padding: 40px;
 }
 
 #footer {
 	text-align: center;
 	background: #606060;
 	color: #eee;
-	height: 150px;
+	line-height: 100px;
+	height: 100px;
 }

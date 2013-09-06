@@ -9,7 +9,7 @@
     <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
     <script src="{% static 'js/jquery-1.8.2.min.js' %}"></script>
     {% block head %}
-        
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
     {% endblock %}
 </head>
 <body>
@@ -21,8 +21,8 @@
             <div id="nav">
                 <ul>
                     <li><a href="#">ORDER</a></li>
-                    <li><a href="#">Nav001</a></li>
-                    <li><a href="#">Nav002</a></li>
+                    <li class="hidden"><a href="#">Nav001</a></li>
+                    <li class="hidden"><a href="#">Nav002</a></li>
                 </ul>
             </div>
         </div>
