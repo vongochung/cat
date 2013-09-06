@@ -6,6 +6,7 @@ from django.utils.translation import ugettext as _
 from django.conf import settings
 from common.functions import get_current_user
 from product.models import Product
+from card.process import Card
 
 def index(request):
     return render_to_response("home/index.html", {}, context_instance=RequestContext(request))
@@ -20,7 +21,17 @@ def list_product(request, product_type):
 
 
 def view_card(request):
-    return render_to_response("home/card.html", {}, context_instance=RequestContext(request))
+
+    card = Card(request)
+    products = card.shopping_card
+
+    data = []
+    for product in products:
+        pd = Product.objects.get(pk = int(product["product_id"]))
+        data.append({"id" : pd.id, "image" : pd.image.url, 'name' : pd.name, 'price' : pd.price1, 'num' : product["num"]})
+
+
+    return render_to_response("card/card.html", {'items' : data}, context_instance=RequestContext(request))
 
 
 def set_lang(request, lang_code):

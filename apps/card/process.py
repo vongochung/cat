@@ -37,12 +37,3 @@ class Card:
                     self.shopping_card.remove(product)
         self.request.session["shopping_card"] = self.shopping_card
         return  self.request
-
-
-    def view_card(self):
-
-
-
-
-
-        return

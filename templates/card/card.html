@@ -1,23 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-
+{% extends "layout.html" %}
+{% load staticfiles %}
+{% block content %}
  <table>
         <tr>
+            <th>Image</th>
             <th>Product</th>
+            <th>Price</th>
             <th>Quantity</th>
         </tr>
-        {% for item in card %}
+        {% for item in items %}
         <tr>
-            <td>{{ item.product_id }}</td>
+            <td><img src="/{{ item.image }}" width="100px" height="100px"/></td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.price }}</td>
             <td>{{ item.num }}</td>
         </tr>
         {% endfor %}
-    </table>
-
-
-</body>
-</html>
+  </table>
+{% endblock content %}
