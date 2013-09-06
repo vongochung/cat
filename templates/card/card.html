@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+ <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+        </tr>
+        {% for item in card %}
+        <tr>
+            <td>{{ item.product_id }}</td>
+            <td>{{ item.num }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+
+</body>
+</html>

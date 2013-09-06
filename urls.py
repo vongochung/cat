@@ -13,6 +13,9 @@ urlpatterns = patterns('',
     # Default App
     (r'', include('home.urls')),
 
+    # Default App
+    (r'card/', include('card.urls')),
+
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 

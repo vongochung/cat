@@ -10,22 +10,22 @@ class Card:
         self.shopping_card = request.session["shopping_card"]
         self.request = request
 
-    def add(self, product_id, num):
+    def add(self, product_id, num, size):
 
         if len(self.shopping_card) > 0:
             update = False
             for product in self.shopping_card:
                 if int(product_id) == int(product["product_id"]):
-                    update_product = {"product_id": product_id, "num": product["num"] + num}
+                    update_product = {"product_id": product_id, "num": product["num"] + num, "size" : size}
                     self.shopping_card[self.shopping_card.index(product)] = update_product
                     update = True
                     break
 
             if update is False:
-                self.shopping_card.append({"product_id": product_id, "num": num})
+                self.shopping_card.append({"product_id": product_id, "num": num, "size" : size})
 
         else:
-            self.shopping_card.append({"product_id": product_id, "num": num})
+            self.shopping_card.append({"product_id": product_id, "num": num, "size" : size})
         self.request.session["shopping_card"] = self.shopping_card
         return self.request
 

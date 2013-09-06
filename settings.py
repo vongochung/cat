@@ -144,7 +144,8 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     'common',
     'home',
-    'product'
+    'product',
+    'card'
 
 
 
