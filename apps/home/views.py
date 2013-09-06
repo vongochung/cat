@@ -5,6 +5,7 @@ from django.template.loader import render_to_string
 from django.utils.translation import ugettext as _
 from django.conf import settings
 from common.functions import get_current_user
+from product.models import Product
 
 def index(request):
     return render_to_response("home/index.html", {}, context_instance=RequestContext(request))
@@ -13,7 +14,8 @@ def index(request):
 def list_product(request, product_type):
 
     if product_type == "cat":
-        return render_to_response("home/kitten.html", {}, context_instance=RequestContext(request))
+        products = Product.objects.all()
+        return render_to_response("home/kitten.html", {'products' : products}, context_instance=RequestContext(request))
     return render_to_response("home/topping.html", {}, context_instance=RequestContext(request))
 
 

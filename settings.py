@@ -1,9 +1,8 @@
 # Django settings for widoosport project.
 import os.path
 import sys
-import djcelery
 
-djcelery.setup_loader()
+
 
 PROJECT_ROOT = os.path.normpath(os.path.dirname(__file__)) + '/'
 sys.path.insert(0, os.path.join(PROJECT_ROOT, 'apps'))
@@ -18,16 +17,12 @@ ADMINS = (
 MANAGERS = ADMINS
 
 
-FIXTURE_DIRS = (
-   PROJECT_ROOT + 'apps/fixtures/',
-)
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'cat', # Or path to database file if using sqlite3.
+        'NAME': 'estore', # Or path to database file if using sqlite3.
         'USER': 'root', # Not used with sqlite3.
-        'PASSWORD': 'root', # Not used with sqlite3.
+        'PASSWORD': '', # Not used with sqlite3.
         #'HOST': '192.168.1.222', # Set to empty string for localhost. Not used with sqlite3.
         'HOST': '127.0.0.1',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '3306', # Set to empty string for default. Not used with sqlite3.
@@ -67,12 +62,12 @@ USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = ''
+MEDIA_ROOT = 'assets/images/'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
-MEDIA_URL = 'media/'
+MEDIA_URL = 'assets/images/'
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
@@ -144,12 +139,12 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
-    'suit',
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
     'common',
-    'home'
+    'home',
+    'product'
 
 
 

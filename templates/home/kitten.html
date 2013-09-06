@@ -24,10 +24,12 @@
    </div>
  <div id ="gallery">
 <ul id="main">
+
+{% for product in products %}
 <li>
-<img src="{% static 'images/upload/cat1.png' %} "alt="" width="140" height ="170"/>
-<h1> British shorthair </h1>
-<div class="desc"> The British Shorthair is a stocky purebred that resembles a plush teddy bear.Brits are found in a number of colors and patterns.</div>
+<img src="{{ product.image.url }}"alt="" width="140" height ="170"/>
+<h1> {{ product.name }}</h1>
+<div class="desc">{{ product.description }}</div>
  <input type="submit" value="add to cart"/>
  <select name="Size">
    <option value="-1" selected>Size-Price</option>
@@ -36,42 +38,8 @@
    <option value="3">Large-$500</option>
  </select>
 </li>
-<li>
-<img src="{% static 'images/upload/cat1.png' %} "alt="" width="140" height ="170"/>
-<h1> British shorthair </h1>
-<div class="desc"> The British Shorthair is a stocky purebred that resembles a plush teddy bear.Brits are found in a number of colors and patterns.</div>
- <input type="submit" value="add to cart"/>
- <select name="Size">
-   <option value="-1" selected>Size-Price</option>
-   <option value="1">Small-$200</option>
-   <option value="2">Medium-$300</option>
-   <option value="3">Large-$500</option>
- </select>
-</li>
-    <li>
-<img src="{% static 'images/upload/cat1.png' %} "alt="" width="140" height ="170"/>
-<h1> British shorthair </h1>
-<div class="desc"> The British Shorthair is a stocky purebred that resembles a plush teddy bear.Brits are found in a number of colors and patterns.</div>
- <input type="submit" value="add to cart"/>
- <select name="Size">
-   <option value="-1" selected>Size-Price</option>
-   <option value="1">Small-$200</option>
-   <option value="2">Medium-$300</option>
-   <option value="3">Large-$500</option>
- </select>
-</li>
-    <li>
-<img src="{% static 'images/upload/cat1.png' %} "alt="" width="140" height ="170"/>
-<h1> British shorthair </h1>
-<div class="desc"> The British Shorthair is a stocky purebred that resembles a plush teddy bear.Brits are found in a number of colors and patterns.</div>
- <input type="submit" value="add to cart"/>
- <select name="Size">
-   <option value="-1" selected>Size-Price</option>
-   <option value="1">Small-$200</option>
-   <option value="2">Medium-$300</option>
-   <option value="3">Large-$500</option>
- </select>
-</li>
+
+{% endfor %}
 </ul>
 </div>
 </nav>
