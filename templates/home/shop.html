@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content %}
+	<div id ="gallery">
+		<ul id="main">
+			<!-- Your loop here -->
+			<li>
+				<img src="cat2.png"alt="" width="140" height ="170"/> 
+				<div class="desc">
+					<h1>Perisan</h1>
+					<div class="desc">The impressive Persian is a massively built cat clothed in a long, flowing coat. Short, heavily boned legs support the Persian's boxy body.</div>
+					<input type="submit" value="add to cart"/>
+					<select name="Size">
+						<option value="-1" selected>Size-Price</option>
+						<option value="1">Small-$200</option>
+						<option value="2">Medium-$300</option>
+						<option value="3">Large-$500</option>
+					</select>
+			</li>
+
+			<li>
+				<img src="cat3.png"alt="" width="140" height ="170"/> 
+				<div class="desc">
+					<h1>Perisan</h1>
+					<div class="desc">The impressive Persian is a massively built cat clothed in a long, flowing coat. Short, heavily boned legs support the Persian's boxy body.</div>
+					<input type="submit" value="add to cart"/>
+					<select name="Size">
+						<option value="-1" selected>Size-Price</option>
+						<option value="1">Small-$200</option>
+						<option value="2">Medium-$300</option>
+						<option value="3">Large-$500</option>
+					</select>
+			</li>
+		</ul>
+	</div>
+{% endblock %}

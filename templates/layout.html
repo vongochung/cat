@@ -8,59 +8,33 @@
     <!-- Loading Bootstrap -->
     <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
     <script src="{% static 'js/jquery-1.8.2.min.js' %}"></script>
-    {% block head %}{% endblock %}
-    <link href="{% static 'css/style.css' %}" rel="stylesheet">
-    <style>
-    #logo img {
-        width: 200px;
-        height: 150px;;
-    }
-
-    </style>
+    {% block head %}
+        
+    {% endblock %}
 </head>
 <body>
-{% block top %}
-<div class="container">
-    <div id="logo">
-        <a href= "/"><img src="{% static 'images/cat_logo.png' %}"></a>
-        <a class="btn btn-success" href="/card">Gio Hang</button></a>
-    </div>
-    <div class="wrapper">
-        <div id="top">
-            <a class="toplink" href="login.html"></a>
-            <br>
-            <nav>
-                <div class="testnavi">
-                    <ul class="nav navm">
-                        <li class="navi">
-                            <a class="navi" href="index.html"><span>ORDER</span></a>
-                            <ul class="navm">
-                                <li class="navi"><a class="navi" href="cat.html">Kitten</a></li>
-                                <li class="navi"><a class="navi" href="topping.html">Toppings</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+    <div id="wrapper" class="container">
+        <div id="header">
+            <div id="logo">
+                <a href= "/"><img src="{% static 'images/cat_logo.png' %}"></a>
+            </div>
+            <div id="nav">
+                <ul>
+                    <li><a href="#">ORDER</a></li>
+                    <li><a href="#">Nav001</a></li>
+                    <li><a href="#">Nav002</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            {% block content %}
+                
+            {% endblock content %}
+        </div>
+        <div id="footer">
+            copyright&copy 2013 All rights reserved The Happy Cats
         </div>
     </div>
-</div>
-<hr>
-{% endblock top %}
-<section>
-{% block content %}
-
-{% endblock content %}
-</section>
-</div>
-
-
-<div class="footer">
-    <div id="text">
-        <p>2013@ All rights reserved The Happy Cats</p>
-    </div>
-</div>
-
 <!-- Load JS here for greater good =============================-->
 {% block js %}
 {% endblock %}
