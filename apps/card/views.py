@@ -17,9 +17,14 @@ def my_shopping_card(request):
                               {'card': card.shopping_card}, context_instance=RequestContext(request))
 
 
-def remove_product(request):
+def remove_product(request, product_id):
 
     card = Card(request)
-    card.remove(1)
-    return render_to_response('card/card.html',
-                              {'card': card.shopping_card}, context_instance=RequestContext(request))
+    card.remove(product_id)
+    return HttpResponse("okie")
+
+def update_product(request, product_id, num):
+
+    card = Card(request)
+    card.update(product_id, int(num), 1)
+    return HttpResponse("okie")

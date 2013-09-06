@@ -19,9 +19,9 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'sqlite3', # Or path to database file if using sqlite3.
-        'USER': '', # Not used with sqlite3.
+        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'estore', # Or path to database file if using sqlite3.
+        'USER': 'root', # Not used with sqlite3.
         'PASSWORD': '', # Not used with sqlite3.
         #'HOST': '192.168.1.222', # Set to empty string for localhost. Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -38,14 +38,8 @@ TIME_ZONE = 'America/Chicago'
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
 
-gettext = lambda s: s
-LANGUAGES = (
-    ('en', gettext('English')),
-    ('fr', gettext('French')),
-)
 
-LOCALE_PATHS = (PROJECT_ROOT + "/locale/",)
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'en-US'
 
 SITE_ID = 1
 
@@ -115,6 +109,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'common.middleware.Set_default'
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )

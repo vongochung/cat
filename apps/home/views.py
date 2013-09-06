@@ -7,6 +7,7 @@ from django.conf import settings
 from common.functions import get_current_user
 from product.models import Product
 from card.process import Card
+from home.forms import OrderForm
 
 def index(request):
     return render_to_response("home/index.html", {}, context_instance=RequestContext(request))
@@ -15,9 +16,12 @@ def index(request):
 def list_product(request, product_type):
 
     if product_type == "cat":
-        products = Product.objects.all()
-        return render_to_response("home/kitten.html", {'products' : products}, context_instance=RequestContext(request))
-    return render_to_response("home/topping.html", {}, context_instance=RequestContext(request))
+        product_type = 1
+    else:
+        product_type = 2
+    products = Product.objects.filter(product_type = product_type)
+    return render_to_response("home/kitten.html", {'products' : products}, context_instance=RequestContext(request))
+
 
 
 def view_card(request):
@@ -28,9 +32,7 @@ def view_card(request):
     data = []
     for product in products:
         pd = Product.objects.get(pk = int(product["product_id"]))
-        data.append({"id" : pd.id, "image" : pd.image.url, 'name' : pd.name, 'price' : pd.price1, 'num' : product["num"]})
-
-
+        data.append({"id" : pd.id, "image" : pd.image.url, 'name' : pd.name, 'price' : pd.price1, 'num' : product["num"], 'amount' : pd.price1 * int(product["num"])})
     return render_to_response("card/card.html", {'items' : data}, context_instance=RequestContext(request))
 
 
@@ -53,3 +55,26 @@ def set_lang(request, lang_code):
         current_player.save()
 
     return response
+
+def checkout(request):
+    if request.method == "GET":
+        f = OrderForm()
+        return render_to_response("home/checkout.html", {'form' : f}, context_instance=RequestContext(request))
+
+    if request.method == "POST":
+        form = OrderForm(request.POST)
+        if form.is_valid():
+            products = request.session["shopping_card"]
+            strPro = ""
+            for product in products:
+                strPro += "product_id: " + str(product["product_id"]) + " => num :" + str(product["num"])
+
+            f = form.save(commit=False)
+            f.note += strPro
+            f.save()
+            del request.session["shopping_card"]
+            return render_to_response('home/_success.html', context_instance=RequestContext(request))
+        else:
+
+            return render_to_response('home/checkout.html', {'form': form},
+                                      context_instance=RequestContext(request))

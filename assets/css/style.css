@@ -61,4 +61,43 @@ body {
 	color: #eee;
 	line-height: 100px;
 	height: 100px;
+    clear: both;
+}
+
+#main > li {
+    width: 250px;
+    float: left;
+    list-style: none;
+    margin: 4px 15px;
+
+}
+
+.btn > btn-orange{
+    margin-bottom: 4px;
+}
+.card{
+    float:right;
+    margin: 4px;
+}
+
+.my_card{
+    width: 100%;
+    border:  #f8b9b7 1px;
+
+}
+.quality{
+    width: 50px;
+}
+
+.footer-card{
+    margin-top: 5px;
+    text-align: center;
+}
+
+#edit-checkout{
+    width: 100%;
+}
+
+#edit-checkout input,textarea {
+    width: 90%;
 }

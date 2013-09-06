@@ -1,26 +1,30 @@
 {% extends "layout.html" %}
 {% load staticfiles %}
 {% block content %}
-<div id ="gallery">
-    <ul id="main">
-    {% for product in products %}
-    <li>
-        <img src="{{ product.image.url }}"alt="" width="140" height ="170"/>
-        <h1> {{ product.name }}</h1>
-        <div class="desc">{{ product.description }}</div>
-        <button class = "btn btn-orange" product_id ="{{ product.id }}" >Add to card</button>
-        <select name="Size">
-            <option value="0" selected>Size-Price</option>
-            <option value="1">Small-${{ product.price1 }}</option>
-            <option value="2">Medium-${{ product.price2 }}</option>
-            <option value="3">Large-${{ product.price3 }}</option>
-        </select>
-    </li>
-    {% endfor %}
-    </ul>
-</div>
-{% endblock content %}
-{% block js %}
-<script src="{% static 'js/card.js' %}"></script>
+	<div id ="gallery">
+		<ul id="main">
+			<!-- Your loop here -->
+            {% for product in products %}
+			<li class="one-product">
+				<img src="{{ product.image.url }}"alt="" width="140" height ="170"/>
+				<div class="desc">
+					<h1> {{ product.name }}</h1>
+                    <div class="desc">{{ product.description }}</div>
+                    <button class = "btn btn-orange" product_id ="{{ product.id }}" >Add to card</button>
+                    <select name="Size">
+                        <option value="0" selected>Size-Price</option>
+                        <option value="1">Small-${{ product.price1 }}</option>
+                        <option value="2">Medium-${{ product.price2 }}</option>
+                        <option value="3">Large-${{ product.price3 }}</option>
+                    </select>
+                </div>
+			</li>
+            {% endfor %}
 
+		</ul>
+	</div>
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'js/card.js' %}"></script>
 {% endblock js %}

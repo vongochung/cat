@@ -1,20 +1,51 @@
 {% extends "layout.html" %}
-{% load staticfiles %}
+{% load staticfiles i18n%}
 {% block content %}
- <table>
+ <table class="my_card" border="1px">
         <tr>
             <th>Image</th>
             <th>Product</th>
             <th>Price</th>
             <th>Quantity</th>
+            <th>Total amount</th>
         </tr>
         {% for item in items %}
         <tr>
             <td><img src="/{{ item.image }}" width="100px" height="100px"/></td>
             <td>{{ item.name }}</td>
             <td>{{ item.price }}</td>
-            <td>{{ item.num }}</td>
+            <td>
+                <input type="text" value="{{ item.num }}" class="quality">
+                <img src="{% static 'images/delete.png' %}" product_id= "{{ item.id }}" class="btn-delete">
+                <img src="{% static 'images/refresh.gif' %}"  product_id= "{{ item.id }}" class="btn-update">
+            </td>
+            <td>{{ item.amount }}</td>
+
         </tr>
         {% endfor %}
-  </table>
+ </table>
+ <div class="footer-card">
+    <a href="/cat.html" class="btn btn-success">Order</a>
+    <button class="btn btn-success btn-checkout">Checkout</button>
+ </div>
+
+
+
+<div id="checkout-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-header">
+        <button id="btn-cancel-checkout" type="button" class="close" data-dismiss="modal" aria-hidden="true">{% trans "×" %}</button>
+        <h3>{% trans "Checkout" %}</h3>
+    </div>
+    <div id="edit-checkout" class="modal-body">
+        test
+    </div>
+    <div class="modal-footer">
+        <button id="btn-save-checkout" class="btn btn-primary">Save</button>
+    </div>
+</div>
+
 {% endblock content %}
+
+{% block js %}
+    <script src="{% static 'js/card.js' %}"></script>
+{% endblock js %}

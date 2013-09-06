@@ -37,3 +37,15 @@ class Card:
                     self.shopping_card.remove(product)
         self.request.session["shopping_card"] = self.shopping_card
         return  self.request
+
+
+    def update(self, product_id, num, size):
+
+        if len(self.shopping_card) > 0:
+            for product in self.shopping_card:
+                if int(product_id) == int(product["product_id"]):
+                    update_product = {"product_id": product_id, "num": num, "size" : size}
+                    self.shopping_card[self.shopping_card.index(product)] = update_product
+                    break
+        self.request.session["shopping_card"] = self.shopping_card
+        return self.request

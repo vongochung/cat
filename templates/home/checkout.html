@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
-{% block content %}
-	<!-- Put your checkout form here -->
-{% endblock %}
+<form method="POST" id="form-checkout" >
+   	{% csrf_token %}
+    {{ form.as_table }}
+</form>
